@@ -143,13 +143,14 @@ h4 { font-size: var(--fs-md); }
 .navbar__brand {
     display: flex;
     align-items: center;
-    gap: var(--space-2);
-    font-family: var(--font-serif);
-    font-size: var(--fs-lg);
-    font-weight: 600;
     color: var(--color-text);
 }
-.navbar__logo { width: 36px; height: 36px; object-fit: contain; border-radius: 50%; }
+.navbar__logo {
+    height: 48px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+}
 .navbar__list {
     display: flex;
     gap: var(--space-6);
@@ -419,6 +420,52 @@ h4 { font-size: var(--fs-md); }
 .contact__info-list strong { font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted); }
 .contact__info-list a:hover { color: var(--color-accent); }
 
+/* --- Mapa de ubicación --- */
+.map__title {
+    font-family: var(--font-serif);
+    font-size: var(--fs-xl);
+    text-align: center;
+    margin-bottom: var(--space-5);
+}
+.map__wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background-color: var(--color-bg-alt);
+    box-shadow: var(--shadow-md);
+}
+.map__iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+.map__placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+    color: var(--color-text-muted);
+    text-align: center;
+    padding: var(--space-5);
+}
+.map__placeholder-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+.map__placeholder-text {
+    font-size: var(--fs-md);
+    font-weight: 500;
+    color: var(--color-text);
+}
+
 /* --- Footer --- */
 .footer {
     background-color: var(--color-bg-alt);
@@ -453,6 +500,7 @@ h4 { font-size: var(--fs-md); }
     .section { padding: var(--space-7) 0; }
 
     .navbar__toggle { display: flex; }
+    .navbar__logo { height: 40px; max-width: 150px; }
     .navbar__menu {
         position: fixed;
         top: var(--navbar-h);
@@ -475,4 +523,5 @@ h4 { font-size: var(--fs-md); }
 
     .contact__grid { grid-template-columns: 1fr; }
     .footer__inner { grid-template-columns: 1fr; gap: var(--space-5); }
+    .map__wrapper { height: 300px; }
 }
