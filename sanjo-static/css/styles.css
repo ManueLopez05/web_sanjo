@@ -4,18 +4,17 @@
 
 /* --- Variables: tema claro (por defecto) --- */
 :root {
-    /* Colores — paleta cálida */
+    /* Colores — paleta blanco / gris / dorado */
     --color-bg: #FFFFFF;
-    --color-bg-alt: #F5EFE6;
+    --color-bg-alt: #F4F4F5;
     --color-bg-elev: #FFFFFF;
-    --color-text: #2A2A2A;
-    --color-text-muted: #6B6B6B;
-    --color-border: #E5DED3;
-    --color-accent: #8B6F47;
-    --color-accent-strong: #6E5638;
-    --color-wood: #C9A87C;
-    --color-beige: #F5EFE6;
-    --color-overlay: rgba(42, 42, 42, 0.55);
+    --color-text: #1F2024;
+    --color-text-muted: #6B7280;
+    --color-border: #E4E4E7;
+    --color-accent: #8B6B2E;
+    --color-accent-strong: #6B5523;
+    --color-wood: #C9A24A;
+    --color-overlay: rgba(20, 20, 24, 0.6);
 
     /* Tipografía */
     --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -55,17 +54,16 @@
 
 /* --- Variables: tema oscuro --- */
 [data-theme="dark"] {
-    --color-bg: #1A1815;
-    --color-bg-alt: #23201C;
-    --color-bg-elev: #2A2622;
-    --color-text: #F1ECE3;
-    --color-text-muted: #B8AFA1;
-    --color-border: #3A332C;
-    --color-accent: #C9A87C;
-    --color-accent-strong: #E0C49B;
-    --color-wood: #B89265;
-    --color-beige: #2A2622;
-    --color-overlay: rgba(0, 0, 0, 0.6);
+    --color-bg: #0F1115;
+    --color-bg-alt: #181B20;
+    --color-bg-elev: #1F2329;
+    --color-text: #F4F4F5;
+    --color-text-muted: #9CA3AF;
+    --color-border: #2D3138;
+    --color-accent: #8B6B2E;
+    --color-accent-strong: #6B5523;
+    --color-wood: #D4AF5C;
+    --color-overlay: rgba(0, 0, 0, 0.7);
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
     --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.5);
 }
