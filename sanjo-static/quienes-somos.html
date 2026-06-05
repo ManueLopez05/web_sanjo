@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce la historia, valores y equipo detrás de Sanjo.">
+    <title>Quiénes somos - Sanjo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/branding/imagotipo-sanjo.png">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__brand" aria-label="Sanjo inicio">
+                <img src="assets/images/branding/imagotipo-sanjo.png" alt="Sanjo" class="navbar__logo">
+                <span class="navbar__name">Sanjo</span>
+            </a>
+
+            <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navbar__menu" id="navMenu" aria-label="Menú principal">
+                <ul class="navbar__list">
+                    <li><a href="index.html" class="navbar__link">Inicio</a></li>
+                    <li><a href="catalogo.html" class="navbar__link">Catálogo</a></li>
+                    <li><a href="quienes-somos.html" class="navbar__link is-active">Quiénes somos</a></li>
+                    <li><a href="contacto.html" class="navbar__link">Contacto</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <span class="theme-toggle__icon" aria-hidden="true"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner" style="background-image: url('assets/images/backgrounds/about-banner.jpg');">
+            <div class="page-banner__overlay"></div>
+            <div class="container page-banner__content">
+                <p class="page-banner__eyebrow">Nuestra historia</p>
+                <h1 class="page-banner__title">Quiénes somos</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="about__intro">
+                    <h2 class="section__title">Una marca con oficio</h2>
+                    <p class="about__text">En Sanjo diseñamos y elaboramos muebles con un enfoque cálido, funcional y durable. Trabajamos con materiales nobles y un compromiso simple: piezas que acompañen la vida cotidiana.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <header class="section__header">
+                    <h2 class="section__title">Nuestros valores</h2>
+                </header>
+                <div class="values__grid">
+                    <div class="value-card">
+                        <h3 class="value-card__title">Calidad</h3>
+                        <p class="value-card__text">Materiales seleccionados y terminaciones cuidadas.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3 class="value-card__title">Diseño</h3>
+                        <p class="value-card__text">Líneas atemporales pensadas para durar.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3 class="value-card__title">Compromiso</h3>
+                        <p class="value-card__text">Atención cercana y responsable con cada cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col footer__col--brand">
+                <a href="index.html" class="footer__brand">
+                    <img src="assets/images/branding/imagotipo-sanjo.png" alt="Sanjo" class="footer__logo">
+                    <span>Sanjo</span>
+                </a>
+                <p class="footer__text">Muebles cálidos y funcionales para casa y oficina.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Navegación</h4>
+                <ul class="footer__list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Contacto</h4>
+                <ul class="footer__list">
+                    <li><a href="mailto:contacto@sanjo.cl">contacto@sanjo.cl</a></li>
+                    <li><a href="tel:+56000000000">+56 9 0000 0000</a></li>
+                    <li>Chile</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Sanjo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

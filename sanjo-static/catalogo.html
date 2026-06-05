@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo Sanjo - Muebles para casa y oficina.">
+    <title>Catálogo - Sanjo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/branding/imagotipo-sanjo.png">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__brand" aria-label="Sanjo inicio">
+                <img src="assets/images/branding/imagotipo-sanjo.png" alt="Sanjo" class="navbar__logo">
+                <span class="navbar__name">Sanjo</span>
+            </a>
+
+            <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navbar__menu" id="navMenu" aria-label="Menú principal">
+                <ul class="navbar__list">
+                    <li><a href="index.html" class="navbar__link">Inicio</a></li>
+                    <li><a href="catalogo.html" class="navbar__link is-active">Catálogo</a></li>
+                    <li><a href="quienes-somos.html" class="navbar__link">Quiénes somos</a></li>
+                    <li><a href="contacto.html" class="navbar__link">Contacto</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <span class="theme-toggle__icon" aria-hidden="true"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header section">
+            <div class="container">
+                <p class="page-header__eyebrow">Colección</p>
+                <h1 class="page-header__title">Catálogo</h1>
+                <p class="page-header__lead">Explora nuestras líneas de muebles para casa y oficina.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="catalog__filters" role="tablist" aria-label="Filtrar por línea">
+                    <button class="chip is-active" role="tab" aria-selected="true">Todos</button>
+                    <button class="chip" role="tab" aria-selected="false">Sanjo Casa</button>
+                    <button class="chip" role="tab" aria-selected="false">Sanjo Oficina</button>
+                </div>
+
+                <div class="products__grid">
+                    <article class="product-card">
+                        <div class="product-card__media">
+                            <img src="assets/images/products/producto-1.png" alt="Producto 1" loading="lazy">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__tag">Sanjo Casa</span>
+                            <h3 class="product-card__title">Producto 1</h3>
+                            <p class="product-card__text">Descripción breve del producto.</p>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__media">
+                            <img src="assets/images/products/producto-2.png" alt="Producto 2" loading="lazy">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__tag">Sanjo Casa</span>
+                            <h3 class="product-card__title">Producto 2</h3>
+                            <p class="product-card__text">Descripción breve del producto.</p>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__media">
+                            <img src="assets/images/products/producto-3.png" alt="Producto 3" loading="lazy">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__tag">Sanjo Oficina</span>
+                            <h3 class="product-card__title">Producto 3</h3>
+                            <p class="product-card__text">Descripción breve del producto.</p>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__media">
+                            <img src="assets/images/products/producto-4.png" alt="Producto 4" loading="lazy">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__tag">Sanjo Oficina</span>
+                            <h3 class="product-card__title">Producto 4</h3>
+                            <p class="product-card__text">Descripción breve del producto.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col footer__col--brand">
+                <a href="index.html" class="footer__brand">
+                    <img src="assets/images/branding/imagotipo-sanjo.png" alt="Sanjo" class="footer__logo">
+                    <span>Sanjo</span>
+                </a>
+                <p class="footer__text">Muebles cálidos y funcionales para casa y oficina.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Navegación</h4>
+                <ul class="footer__list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Contacto</h4>
+                <ul class="footer__list">
+                    <li><a href="mailto:contacto@sanjo.cl">contacto@sanjo.cl</a></li>
+                    <li><a href="tel:+56000000000">+56 9 0000 0000</a></li>
+                    <li>Chile</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Sanjo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
